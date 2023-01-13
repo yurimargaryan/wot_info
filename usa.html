@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <meta charset="utf-8">
+        <title>WotInfo</title>
+        <link rel="icon" href="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/tank.png">
+        <script type="text/javascript" src="main.js"></script> 
+
+    </head>
+
+    <body>
+        <style>
+
+            body {
+                overflow-x: hidden;
+                font-family: 'Roboto', sans-serif;
+                background-color: black;
+                margin: 0;
+                
+            }
+
+            a{
+                text-decoration: none;
+            }
+
+            .header{
+                position: relative;
+                width: 100%;
+                background: rgb(2,0,36);
+                background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(1,92,48,1) 100%);
+                display: flex;
+                justify-content:center;
+            }
+
+            .image_div{
+               
+                
+                width: 10%;
+            }
+
+            .logo{
+                cursor: pointer;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 80%;
+                
+            }
+
+            .about{
+                cursor: pointer;
+                text-align: center;
+                border: 2px solid black    ;
+                background-color: gray;
+                color: white;
+                padding: 5%;    
+                border-radius: 5%;
+
+            }
+
+            .menu{
+                
+                cursor: pointer;
+                text-align: center;
+                width: 5%;
+                border: 2px solid black;
+                color: white;
+                padding: 1%;
+                margin: 1%;
+                border-radius: 5%;
+                
+            }
+            
+            .menu:hover{
+                
+                opacity: 0.5;
+            }
+
+            .about:hover{
+                
+                opacity: 0.5;
+
+            }
+
+            .usa{
+                background-image: url("file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/usa.jpg");
+                background-position: center;
+                background-size: cover;
+            }
+
+            .germany{
+                background-image: url("file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/germany.jpg");
+                background-position: center;
+                background-size: cover;
+            }
+
+            .china{
+                background-image: url("file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/china.jpg");
+                background-position: center;
+                background-size: cover;
+            }
+
+            .gb{
+                background-image: url("file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/gb.jpg");
+                background-position: center;
+                background-size: cover;
+            }
+
+            .japan{
+                background-image: url("file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/japan.jpg");
+                background-position: center;
+                background-size: cover;
+            }
+
+            .france{
+                background-image: url("file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/france.jpg");
+                background-position: center;
+                background-size: cover;
+            }
+
+            .europe{
+                background-image: url("file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/europe.jpg");
+                background-position: center;
+                background-size: cover;
+            }
+
+            .ussr{
+                background-image: url("file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/ussr.jpg");
+                background-position: center;
+                background-size: cover;
+            }
+            .about_text_div{
+                position: relative;
+                margin-left: 10%;
+                margin-right: 10%;
+                margin-top: 5%;        
+                width: 80%;
+                color: white;
+                border: 2px solid #015c30;
+                                          
+                
+            }
+            .title{
+                text-align: center;              
+            }
+            .text{
+                text-align: center; 
+                padding-left: 5%;
+                padding-right: 5%;
+                font-size: 100%;
+                word-wrap: break-word;
+            }
+            .heavy_icon{
+                display: block      ;
+                width: 10%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .tanks_list{
+                margin-left: 5%;
+                margin-right: 5%;
+                margin-top: 5%;
+                width: 90%;
+                border: 2px solid #015c30;
+
+
+            }
+            .heavy_title{
+                text-align: center;
+                color: white;
+            }
+            .heavy_lvl{
+                text-align: center;
+                color: white;
+            }
+            .tanks_block{
+                margin-top: 5%;
+                position: relative;
+                width: 100%;
+                display: flex;
+                justify-content:space-around;
+            }
+            .tanks_div{
+                cursor: pointer;
+                opacity: 80%;
+                position: relative;
+                width: 33%;
+                
+            }
+            .tanks {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 70%;
+            }
+            .tank_name{
+                margin-top: 0;
+                color: #d2d2d2;
+                text-align: center;
+            }
+            br{
+                width: 100%;
+                height: 2px;
+                background-color: #015c30;
+            }
+            .tanks_div:hover{
+                opacity: 100%;
+            }
+        </style>
+        <div class="header">    
+                <a href="usa.html" class="menu usa"><span>США</span></a>
+                <a href="#" class="menu germany"><span>Германия</span></a>
+                <a href="#" class="menu ussr"><span>СССР</span></a>
+                <a href="#" class="menu gb"><span>Британия</span></a>
+                <div class="image_div"> 
+                    <a href="index.html"><img src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/wot_blitz_logo.png" class="logo">    
+                    <p class="about">О сайте</p></a>
+                </div>
+                <a href="#" class="menu japan"><span>Япония </span></a>
+                <a href="#" class="menu china"><span>Китай</span></a>
+                <a href="#" class="menu france"><span>Франция</span></a>
+                <a href="#" class="menu europe"><span>Европа</span></a>
+        </div>
+
+            <div class="about_text_div">
+                    <h2 class="title"> Описание </h2>
+                    <p class="text">На данной странице находятся все танки американской нации от премиум техники, до коллекционной.</p>
+            </div>
+            <div class="tanks_list">
+                    <h3 class="heavy_title"> Тяжелые танки</h3>
+                    <img class="heavy_icon" src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/heavy_icon.png">
+                    <h4 class="heavy_lvl"> Уровень Х</h4>
+                    <div class="tanks_block">
+                        <div class="tanks_div">
+                            <img class="tanks" src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/USA/T110e5.png">
+                            <p class="tank_name">T110E5</p>
+                        </div>
+                        <div class="tanks_div">
+                            <img class="tanks" src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/USA/T57_Heavy.png">
+                            <p class="tank_name">T57 Heavy Tank</p>
+                        </div>
+                        <div class="tanks_div">
+                            <img class="tanks" src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/USA/M-6-Y.png">
+                            <p class="tank_name">M-VI-Yoh</p>
+                        </div>
+                    </div>
+
+                    <div class="tanks_block">
+                        <div class="tanks_div">
+                            <img class="tanks" src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/USA/A128_Concept_1b.png">
+                            <p class="tank_name" style="color: #90bfd6;">Concept 1B</p>
+                        </div>
+                        <div class="tanks_div">
+                            <img class="tanks" src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/USA/A95_T95E6.png">
+                            <p class="tank_name" style="color: #ffd15b;">T95E6</p>
+                        </div>
+                    </div>
+                    <h4 class="heavy_lvl"> Уровень IХ</h4>
+                    <div class="tanks_block">
+                        <div class="tanks_div">
+                            <img class="tanks" src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/USA/M103.png">
+                            <p class="tank_name">M103</p>
+                        </div>
+                        <div class="tanks_div">
+                            <img class="tanks" src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/USA/M-5-Y.png">
+                            <p class="tank_name">M-V-Yoh</p>
+                        </div>
+                        <div class="tanks_div">
+                            <img class="tanks" src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/USA/A125_AEP_1.png">
+                            <p class="tank_name" style="color: #90bfd6;">AE Phase I</p>
+                        </div>
+                    </div>
+                    <h4 class="heavy_lvl"> Уровень VIII</h4>
+                    <div class="tanks_block">
+                        <div class="tanks_div">
+                            <img class="tanks" src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/USA/T34_hvy.png">
+                            <p class="tank_name" style="color: #ffd15b;">T34</p>
+                        </div>
+                        <div class="tanks_div">
+                            <img class="tanks" src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/USA/T34_hvy_Freedom.png">
+                            <p class="tank_name" style="color: #ffd15b;">T34 Independence</p>
+                        </div>
+                        <div class="tanks_div">
+                            <img class="tanks" src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/USA/T32.png">
+                            <p class="tank_name">T32</p>
+                        </div>
+                    </div>
+                    <div class="tanks_block">
+                        <div class="tanks_div">
+                            <img class="tanks" src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/USA/M6A2E1_exp.png">
+                            <p class="tank_name" style="color: #ffd15b;">M6A2E1 EXP</p>
+                        </div>
+                        <div class="tanks_div">
+                            <img class="tanks" src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/USA/A124_T54E2.png">
+                            <p class="tank_name" style="color: #ffd15b;">T54E2</p>
+                        </div>
+                        <div class="tanks_div">
+                            <img class="tanks" src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/USA/A117_T26E5.png">
+                            <p class="tank_name" style="color: #ffd15b;">T26E5</p>
+                        </div>
+                    </div>
+                    <div class="tanks_block">
+                        <div class="tanks_div">
+                            <img class="tanks" src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/USA/A115_Chrysler_K.png">
+                            <p class="tank_name" style="color: #ffd15b;">Chrysler K</p>
+                        </div>
+                        <div class="tanks_div">
+                            <img class="tanks" src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/USA/M-3-Y.png">
+                            <p class="tank_name">M-III-Yoh</p>
+                        </div>
+                    </div>
+                    <h4 class="heavy_lvl"> Уровень VII</h4>
+                    <div class="tanks_block">
+                        <div class="tanks_div">
+                            <img class="tanks" src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/USA/M-7-Y.png">
+                            <p class="tank_name">M-VII-Yoh</p>
+                        </div>
+                        <div class="tanks_div">
+                            <img class="tanks" src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/USA/M6A2E1.png">
+                            <p class="tank_name" style="color: #ffd15b;">M6A2E1</p>
+                        </div>
+                        <div class="tanks_div">
+                            <img class="tanks" src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/USA/T29.png">
+                            <p class="tank_name">T29</p>
+                        </div>
+                    </div>
+                    <h4 class="heavy_lvl"> Уровень VI</h4>
+                    <div class="tanks_block">
+                        <div class="tanks_div">
+                            <img class="tanks" src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/USA/M6.png">
+                            <p class="tank_name">M6</p>
+                        </div>
+                        <div class="tanks_div">
+                            <img class="tanks" src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/USA/M6E2BP.png">
+                            <p class="tank_name" style="color: #90bfd6;">Magnus</p>
+                        </div>
+                    </div>
+                    <h4 class="heavy_lvl"> Уровень V</h4>
+                    <div class="tanks_block">
+                        <div class="tanks_div">
+                            <img class="tanks" src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/USA/T14.png">
+                            <p class="tank_name" style="color: #ffd15b;">T14</p>
+                        </div>
+                        <div class="tanks_div">
+                            <img class="tanks" src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/USA/T1_hvy.png">
+                            <p class="tank_name">T1 Heavy Tank</p>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="tanks_list">
+                <h3 class="heavy_title">Средние Танки</h3>
+                <img class="heavy_icon" src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/medium_icon.png">
+                <h4 class="heavy_lvl"> Уровень Х</h4>
+                <div class="tanks_block">
+                    <div class="tanks_div">
+                        <img class="tanks" src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/USA/M48A1.png">
+                        <p class="tank_name">M48 Patton</p>
+                    </div>
+                    <div class="tanks_div">
+                        <img class="tanks" src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/USA/M60.png">
+                        <p class="tank_name" style="color: #ffd15b;">M60</p>
+                    </div>
+                </div>
+                <h4 class="heavy_lvl"> Уровень IХ</h4>
+                <div class="tanks_block">
+                    <div class="tanks_div">
+                        <img class="tanks" src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/USA/T54E1.png">
+                        <p class="tank_name">T54E1</p>
+                    </div>
+                    <div class="tanks_div">
+                        <img class="tanks" src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/USA/M46_Patton.png">
+                        <p class="tank_name">M46 Patton</p>
+                    </div>
+                </div>
+                <h4 class="heavy_lvl"> Уровень VIII</h4>
+                <div class="tanks_block">
+                    <div class="tanks_div">
+                        <img class="tanks" src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/USA/T95E2.png">
+                        <p class="tank_name" style="color: #ffd15b;">T95E2</p>
+                    </div>
+                    <div class="tanks_div">
+                        <img class="tanks" src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/USA/T69.png">
+                        <p class="tank_name">T69</p>
+                    </div>
+                    <div class="tanks_div">
+                        <img class="tanks" src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/USA/T26_E4_SuperPershing.png">
+                        <p class="tank_name" style="color: #ffd15b;">T26E4 SuperPershing</p>
+                    </div>
+                </div>
+                <div class="tanks_block">
+                    <div class="tanks_div">
+                        <img class="tanks" src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/USA/Pershing.png">
+                        <p class="tank_name">M26 Pershing</p>
+                    </div>
+                    <div class="tanks_div">
+                        <img class="tanks" src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/USA/A111_T25_Pilot.png">
+                        <p class="tank_name" style="color: #ffd15b;">T25 Pilot Number 1</p>
+                    </div>
+                </div>
+                <h4 class="heavy_lvl"> Уровень VII</h4>
+                <div class="tanks_block">
+                    <div class="tanks_div">
+                        <img class="tanks" src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/USA/T23E3.png">
+                        <p class="tank_name" style="color: #ffd15b;">T23E3</p>
+                    </div>
+                    <div class="tanks_div">
+                        <img class="tanks" src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/USA/T20.png">
+                        <p class="tank_name">T20</p>
+                    </div>
+                    <div class="tanks_div">
+                        <img class="tanks" src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/USA/A121_T26E3.png">
+                        <p class="tank_name" style="color: #ffd15b;">T26E3 Eagle 7</p>
+                    </div>
+                </div>
+                <h4 class="heavy_lvl"> Уровень VI</h4>
+                <div class="tanks_block">
+                    <div class="tanks_div">
+                        <img class="tanks" src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/USA/Sherman_Jumbo.png">
+                        <p class="tank_name" style="color: #ffd15b;">M4A3E2 Sherman Jumbo</p>
+                    </div>
+                    <div class="tanks_div">
+                        <img class="tanks" src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/USA/M4A3E8_Sherman.png">
+                        <p class="tank_name">M4A3E8 Sherman</p>
+                    </div>
+                    <div class="tanks_div">
+                        <img class="tanks" src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/USA/M4A3E8_BP.png">
+                        <p class="tank_name" style="color: #90bfd6;">Рудольф</p>
+                    </div>
+                </div>
+                <div class="tanks_block">
+                    <div class="tanks_div">
+                        <img class="tanks" src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/USA/M18E2BP.png">
+                        <p class="tank_name" style="color: #90bfd6;">BLTZ9000</p>
+                    </div>
+                    <div class="tanks_div">
+                        <img class="tanks" src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/USA/A104_M4A3E8A.png">
+                        <p class="tank_name" style="color: #ffd15b;">M4A3E8 Fury</p>
+                    </div>
+                </div>
+                <h4 class="heavy_lvl"> Уровень V</h4>
+                <div class="tanks_block">
+                    <div class="tanks_div">
+                        <img class="tanks" src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/USA/Ram-II.png">
+                        <p class="tank_name" style="color: #ffd15b;">Ram II</p>
+                    </div>
+                    <div class="tanks_div">
+                        <img class="tanks" src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/USA/M4_Sherman.png">
+                        <p class="tank_name">M4 Sherman</p>
+                    </div>
+                    <div class="tanks_div">
+                        <img class="tanks" src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/USA/M4A2E4.png">
+                        <p class="tank_name" style="color: #ffd15b;">M4A2E4 Sherman</p>
+                    </div>
+                </div>
+                <h4 class="heavy_lvl"> Уровень IV</h4>
+                <div class="tanks_block">
+                    <div class="tanks_div">
+                        <img class="tanks" src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/USA/M7_med.png">
+                        <p class="tank_name">M7</p>
+                    </div>
+                    <div class="tanks_div">
+                        <img class="tanks" src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/USA/M3_Grant.png">
+                        <p class="tank_name" style="color: #90bfd6;">M3 Lee</p>
+                    </div>
+                    <div class="tanks_div">
+                        <img class="tanks" src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/USA/A77_T6M.png">
+                        <p class="tank_name" style="color: #ffd15b;">T6E1 Grizzly</p>
+                    </div>
+                </div>
+                <h4 class="heavy_lvl"> Уровень III</h4>
+                <div class="tanks_block">
+                    <div class="tanks_div">
+                        <img class="tanks" src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/USA/M2_med.png">
+                        <p class="tank_name" style="color: #90bfd6;">M2 Medium Tank</p>
+                    </div>
+                </div>
+                <h4 class="heavy_lvl"> Уровень II</h4>
+                <div class="tanks_block">
+                    <div class="tanks_div">
+                        <img class="tanks" src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/USA/T2_med.png">
+                        <p class="tank_name" style="color: #90bfd6;">T2 Medium Tank</p>
+                    </div>
+                </div>
+        </div>
+        <div class="tanks_list">
+            <h3 class="heavy_title">Легкие Танки</h3>
+            <img class="heavy_icon" src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/light_icon.png">
+            <h4 class="heavy_lvl"> Уровень Х</h4>
+            <div class="tanks_block">
+                <div class="tanks_div">
+                    <img class="tanks" src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/USA/A116_XM551_Exp.png">
+                    <p class="tank_name" style="color: #90bfd6;">XM551 Sheridan Ракетный</p>
+                </div>
+                <div class="tanks_div">
+                    <img class="tanks" src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/USA/A116_XM551.png">
+                    <p class="tank_name" style="color: #ffd15b;">XM551 Sheridan</p>
+                </div>
+            </div>
+            <h4 class="heavy_lvl"> Уровень IХ</h4>
+            <div class="tanks_block">
+                <div class="tanks_div">
+                    <img class="tanks" src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/USA/A99_T92E1.png">
+                    <p class="tank_name">T92E1</p>
+                </div>
+            </div>
+            <h4 class="heavy_lvl"> Уровень VIII</h4>
+            <div class="tanks_block">
+                <div class="tanks_div">
+                    <img class="tanks" src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/USA/A100_T49.png">
+                    <p class="tank_name">T49</p>
+                </div>
+            </div>
+            <h4 class="heavy_lvl"> Уровень VII</h4>
+            <div class="tanks_block">
+                <div class="tanks_div">
+                    <img class="tanks" src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/USA/T71.png">
+                    <p class="tank_name">T71</p>
+                </div>
+                <div class="tanks_div">
+                    <img class="tanks" src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/USA/T49_Rocket.png">
+                    <p class="tank_name" style="color: #ffd15b;">T49 ПТУР</p>
+                </div>
+                <div class="tanks_div">
+                    <img class="tanks" src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/USA/M41_Bulldog.png">
+                    <p class="tank_name">M41 Walker Bulldog</p>
+                </div>
+            </div>
+            <h4 class="heavy_lvl"> Уровень VI</h4>
+            <div class="tanks_block">
+                <div class="tanks_div">
+                    <img class="tanks" src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/USA/Sherman_Jumbo.png">
+                    <p class="tank_name" style="color: #ffd15b;">M4A3E2 Sherman Jumbo</p>
+                </div>
+                <div class="tanks_div">
+                    <img class="tanks" src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/USA/M4A3E8_Sherman.png">
+                    <p class="tank_name">M4A3E8 Sherman</p>
+                </div>
+                <div class="tanks_div">
+                    <img class="tanks" src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/USA/M4A3E8_BP.png">
+                    <p class="tank_name" style="color: #90bfd6;">Рудольф</p>
+                </div>
+            </div>
+            <div class="tanks_block">
+                <div class="tanks_div">
+                    <img class="tanks" src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/USA/M18E2BP.png">
+                    <p class="tank_name" style="color: #90bfd6;">BLTZ9000</p>
+                </div>
+                <div class="tanks_div">
+                    <img class="tanks" src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/USA/A104_M4A3E8A.png">
+                    <p class="tank_name" style="color: #ffd15b;">M4A3E8 Fury</p>
+                </div>
+            </div>
+            <h4 class="heavy_lvl"> Уровень V</h4>
+            <div class="tanks_block">
+                <div class="tanks_div">
+                    <img class="tanks" src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/USA/Ram-II.png">
+                    <p class="tank_name" style="color: #ffd15b;">Ram II</p>
+                </div>
+                <div class="tanks_div">
+                    <img class="tanks" src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/USA/M4_Sherman.png">
+                    <p class="tank_name">M4 Sherman</p>
+                </div>
+                <div class="tanks_div">
+                    <img class="tanks" src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/USA/M4A2E4.png">
+                    <p class="tank_name" style="color: #ffd15b;">M4A2E4 Sherman</p>
+                </div>
+            </div>
+            <h4 class="heavy_lvl"> Уровень IV</h4>
+            <div class="tanks_block">
+                <div class="tanks_div">
+                    <img class="tanks" src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/USA/M7_med.png">
+                    <p class="tank_name">M7</p>
+                </div>
+                <div class="tanks_div">
+                    <img class="tanks" src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/USA/M3_Grant.png">
+                    <p class="tank_name" style="color: #90bfd6;">M3 Lee</p>
+                </div>
+                <div class="tanks_div">
+                    <img class="tanks" src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/USA/A77_T6M.png">
+                    <p class="tank_name" style="color: #ffd15b;">T6E1 Grizzly</p>
+                </div>
+            </div>
+            <h4 class="heavy_lvl"> Уровень III</h4>
+            <div class="tanks_block">
+                <div class="tanks_div">
+                    <img class="tanks" src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/USA/M2_med.png">
+                    <p class="tank_name" style="color: #90bfd6;">M2 Medium Tank</p>
+                </div>
+            </div>
+            <h4 class="heavy_lvl"> Уровень II</h4>
+            <div class="tanks_block">
+                <div class="tanks_div">
+                    <img class="tanks" src="file:///C:/Users/Yura/Desktop/workspace/wot_blitz_info/images/USA/T2_med.png">
+                    <p class="tank_name" style="color: #90bfd6;">T2 Medium Tank</p>
+                </div>
+            </div>
+
+    </body>
+
+</html>
