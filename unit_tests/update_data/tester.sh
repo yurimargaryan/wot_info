@@ -1,4 +1,4 @@
-sum=$((100+14))
+sum=$((100-50))
 return_data=return_data.txt
 echo $sum > $return_data
 diff $return_data currect_return.txt > diff 
