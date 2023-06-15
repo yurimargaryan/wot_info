@@ -1,1 +1,1 @@
-nightly, weekly
+continous, nightly, weekly
